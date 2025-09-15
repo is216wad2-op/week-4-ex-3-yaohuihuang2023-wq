@@ -9,7 +9,7 @@
       
         <!-- add HTML code here -->
          <input id="userinput" type="text" placeholder="enter items">
-         <button id="'enter" onclick="addListAfterClick()">Enter</button>
+         <button id="enter" onclick="addListAfterClick()">Enter</button>
 
 
       <ul>
@@ -24,7 +24,7 @@
       <script>
       
         // add code here
-         function addListAfterClick(){
+       function addListAfterClick(){
             var ul=document.getElementsByTagName("ul")[0];
             var li=document.createElement("li"); // <li></li>
             var input =document.getElementById("userinput");
@@ -35,6 +35,7 @@
                ul.appendChild(li);
                //clear the input box after adding the item
                input.value = "";
+               
             }
         }
       </script>
